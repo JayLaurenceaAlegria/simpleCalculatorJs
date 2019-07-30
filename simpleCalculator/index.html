@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <title>Calculator</title>
+    <style>
+    form > button {
+        width: 100%;
+    }
+    .checkbox{
+        margin: 10px 0 10px 0;
+    }
+    #result{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size:  50px;
+        font-weight: 400;
+    }
+    #calc-body{
+        border: outset 10px grey;
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="center">
+        <h4><b> Simple Calculator </b></h4>
+        </div>
+        <div class="row">
+            <div class="col s12 m6 offset-m3  white-text">
+                    <div class="card-panel green" id="calc-body">
+                <form id="calc" style="margin-top: 30px;">
+                    <label class=" white-text" for="num1">Enter Num1</label>
+                    <input class=" white-text" type="number" class="input-field" id="num1">
+                    <label  class=" white-text" for="num1">Enter Num2</label>
+                    <input class=" white-text" type="number" class="input-field" id="num2">
+                    <!-- check boxes -->
+                    <div  class="checkbox center">
+                        <p>
+                                <input type="checkbox" id="add" class="filled-in">
+                                <label class=" white-text" for="add">ADD</label>
+                        </p>                            
+                        <p>
+                                <input type="checkbox" id="subtract" class="filled-in">
+                                <label class=" white-text"for="subtract">SUBTRACT</label>
+                        </p>                            
+                        <p>
+                                <input type="checkbox" id="multiply" class="filled-in">
+                                <label  class=" white-text" for="multiply">MULTIPLY</label>
+                        </p>                            
+                        <p>
+                                <input type="checkbox" id="divide" class="filled-in">
+                                <label class=" white-text" for="divide">DIVIDE</label>
+                        </p>                            
+                    </div>
+                    <button id="solve" type="submit" class="btn">Calculate</button>
+                </form>
+                <div class="card-panel center-align teal" id="res-container">
+                    <div class="card-content" id="result">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

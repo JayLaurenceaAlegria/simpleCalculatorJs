@@ -1,0 +1,19 @@
+.calc {
+    /* width: 300px; */
+    background-color: black;
+    padding: 20px 20px 5px 20px;
+    border-radius: 20px;
+}
+.screen {
+    width: 100%;
+    border-radius: 3px;
+    padding: 5px 10px 5px 10px;
+}
+.button{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+}
+.btn {
+    border-radius: 5px;
+}
